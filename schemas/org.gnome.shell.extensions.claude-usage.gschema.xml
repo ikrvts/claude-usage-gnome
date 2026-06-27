@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.claude-usage"
+          path="/org/gnome/shell/extensions/claude-usage/">
+
+    <key name="refresh-interval" type="i">
+      <default>5</default>
+      <range min="1" max="120"/>
+      <summary>Интервал обновления (минуты)</summary>
+      <description>Как часто опрашивать API. Ниже 3 минут возможны ошибки 429 (rate limit).</description>
+    </key>
+
+    <key name="credentials-path" type="s">
+      <default>''</default>
+      <summary>Путь к credentials.json</summary>
+      <description>Пусто = автоопределение (~/.claude/.credentials.json).</description>
+    </key>
+
+    <key name="expected-country" type="s">
+      <default>''</default>
+      <summary>Ожидаемая страна выходной ноды (код ISO, напр. NL)</summary>
+      <description>Если задано — перед запросом проверяется страна выхода через cdn-cgi/trace. При несовпадении запрос не отправляется. Пусто = проверка выключена.</description>
+    </key>
+
+    <key name="panel-mode" type="s">
+      <default>'both'</default>
+      <choices>
+        <choice value="both"/>
+        <choice value="max"/>
+      </choices>
+      <summary>Что показывать в панели</summary>
+      <description>both — оба числа (5ч и 7д); max — только наибольший из двух.</description>
+    </key>
+
+    <key name="manual-first" type="b">
+      <default>false</default>
+      <summary>Ручное первое обновление</summary>
+      <description>Не опрашивать API при входе; ждать клика «Обновить».</description>
+    </key>
+
+  </schema>
+</schemalist>
