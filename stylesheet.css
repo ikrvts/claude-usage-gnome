@@ -1,0 +1,75 @@
+/* Панель */
+.claude-panel-box {
+    spacing: 6px;
+}
+
+.claude-dot {
+    font-size: 9px;
+    padding-right: 2px;
+}
+
+.claude-panel-label {
+    font-feature-settings: "tnum";
+    font-size: 13px;
+}
+
+/* Поп-ап: заголовок */
+.claude-header {
+    padding: 4px 2px 8px 2px;
+}
+
+.claude-title {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.claude-plan {
+    font-size: 10px;
+    font-weight: bold;
+    color: #8b949e;
+    background-color: rgba(139, 148, 158, 0.15);
+    border-radius: 6px;
+    padding: 2px 8px;
+}
+
+/* Поп-ап: блок лимита */
+.claude-limit {
+    spacing: 4px;
+    padding: 6px 2px;
+    min-width: 240px;
+}
+
+.claude-limit-name {
+    font-size: 13px;
+}
+
+.claude-limit-pct {
+    font-weight: bold;
+    font-feature-settings: "tnum";
+    font-size: 13px;
+}
+
+.claude-reset {
+    font-size: 11px;
+    color: #8b949e;
+}
+
+/* Прогресс-бар */
+.claude-bar-holder {
+    padding: 2px 0;
+}
+
+.claude-bar-track {
+    background-color: rgba(139, 148, 158, 0.22);
+    border-radius: 4px;
+}
+
+.claude-bar-fill {
+    border-radius: 4px;
+}
+
+/* Статус */
+.claude-status {
+    font-size: 11px;
+    color: #8b949e;
+}
